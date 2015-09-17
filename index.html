@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Dom's Incredible Percentages Calculator</title>
+   
+    <meta name="description" content="">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/jquery-ui-slider-pips.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+    <link href='http://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet" media="all">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-title" content="Dom's %s">
+    <meta name="application-name" content="Dom's %s">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui-slider-pips.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    
+    <script src="js/dom-calc.js"></script>
+    
+       
+    <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body id="individualAthlete">
+    <div class="wrap">
+        <header role="banner">
+        
+            <h1>Dom's <span class="widescreen">Incredible Percentages </span>Calculator</h1>
+            <p id="buttons"><span class="btn individualBtn">Individual</span><span class="btn classBtn">Class</span></p>
+        </header>
+    
+        <main role="main">
+   
+            <section>
+           
+                <article id="individual">
+                    <h2>Individual Athlete</h2>
+                    <p class="widescreen">Just enter a weight and a range for the percentages you want of that weight. Boxed off.</p>
+                    
+                    <p><input type="number" id="weight" placeholder="What weight you want?"></p>
+                
+                    <h3>What Range?</h3>
+                    
+                    <p class="range"></p>
+                    
+                    <h3 class="rangeValsDisplay">
+                        Range: <span class="rangeVals"></span>
+                    </h3>
+                    
+                    <h3 class="result">The numbers are:</h3> 
+                    <table id="numbers">
+                        <tr><th>Results will appear here!</th></tr>
+                    </table>                    
+                </article>
+                
+                <article id="class">
+                    <h2>Group of Athletes</h2>
+                    <p class="widescreen">Check the percentages for a range of weights. Useful for coaches setting up for a class. Boxed off.</p>
+                    <h3>What Percentage?</h3>
+                    
+                    <p class="weight"></p>
+                    
+                    <h3 class="weightDisplay">Here ya go!</h3>
+                    
+                    <table id="classNumbers">
+                        <tr><th colspan=2>Percentage: <span class="percentageVal"></span></th></tr>
+                        <tr><td width="50%"><input type="number" class="classWeight" placeholder="What weight Jabroni?"></td><td class="classResult"></td></tr>
+                    </table>  
+                    
+                </article>
+                
+            </section>
+            
+        </main>
+        
+        <aside role="complementary">
+            <h2>Who is Dom?</h2>
+            <img src="img/dom.jpg" />
+            <p>Dom is a total sweetheart badass. With 12 years of background in strength and conditioning for MMA fighters, Dom found CrossFit to be the perfect way for EVERYONE to stay in top physical and mental condition. The look of disapproval will keep you moving, and her smile at the end will keep you coming back for more.</p>
+            <p>Dom coaches at Ari Crossfit in Bangkok - <a href="http://aricrossfit.com/">aricrossfit.com</a></p>
+        </aside>
+        
+
+        <footer role="contentinfo">
+
+            <small>Copyright &copy; <time datetime="2015">2015</time> John Behan @ <a href="http://boxitoff.com">Box It Off</a></small>
+            
+        </footer>
+    </div>
+    
+</body>
+</html>
